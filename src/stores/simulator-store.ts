@@ -4,7 +4,9 @@ import abilitiesData from "@/data/melee-abilities.json";
 import { additionalAbilities } from "@/data/additional-abilities";
 import equipmentData from "@/data/equipment.json";
 import { simulateRotation } from "@/engine/simulate-rotation";
-import type { Ability, Equipment, RotationStep, SimulationResult } from "@/engine/types";
+import { calculateMeleeAbilityDamage, equipmentStyleBonus } from "@/engine/ability-damage";
+import type { Ability, CombatSkill, Equipment, PlayerLevels, RotationStep, SimulationResult } from "@/engine/types";
+import { defaultPlayerLevels } from "@/lib/hiscores";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -13,15 +15,24 @@ export const equipment = equipmentData as Equipment[];
 
 interface SimulatorStore {
   abilityDamage: number;
+  strengthBoost: number;
+  meleeStyleBonus: number;
   startingAdrenaline: number;
   rotation: RotationStep[];
   result: SimulationResult | null;
   selectedAbilityId: string | null;
   selectedEquipmentIds: string[];
+  characterName: string;
+  playerLevels: PlayerLevels;
   setAbilityDamage: (value: number) => void;
+  setStrengthBoost: (value: number) => void;
+  setMeleeStyleBonus: (value: number) => void;
   setStartingAdrenaline: (value: number) => void;
   setSelectedAbilityId: (id: string | null) => void;
   toggleEquipment: (equipmentId: string) => void;
+  setCharacterName: (name: string) => void;
+  setPlayerLevel: (skill: CombatSkill, level: number) => void;
+  setPlayerLevels: (levels: PlayerLevels) => void;
   addAbility: (abilityId: string) => void;
   removeAbility: (stepId: string) => void;
   moveAbility: (from: number, to: number) => void;
@@ -39,14 +50,23 @@ export const useSimulatorStore = create<SimulatorStore>()(
   persist(
     (set, get) => ({
       abilityDamage: 2500,
+      strengthBoost: 0,
+      meleeStyleBonus: 0,
       startingAdrenaline: 100,
       rotation: [],
       result: null,
       selectedAbilityId: null,
       selectedEquipmentIds: [],
+      characterName: "",
+      playerLevels: defaultPlayerLevels,
       setAbilityDamage: (abilityDamage) => set({ abilityDamage, result: null }),
+      setStrengthBoost: (strengthBoost) => set({ strengthBoost: Math.min(25, Math.max(0, strengthBoost)), result: null }),
+      setMeleeStyleBonus: (meleeStyleBonus) => set({ meleeStyleBonus: Math.max(0, meleeStyleBonus), result: null }),
       setStartingAdrenaline: (startingAdrenaline) => set({ startingAdrenaline, result: null }),
       setSelectedAbilityId: (selectedAbilityId) => set({ selectedAbilityId }),
+      setCharacterName: (characterName) => set({ characterName }),
+      setPlayerLevel: (skill, level) => set((state) => ({ playerLevels: { ...state.playerLevels, [skill]: Math.min(120, Math.max(1, level)) }, result: null })),
+      setPlayerLevels: (playerLevels) => set({ playerLevels, result: null }),
       toggleEquipment: (equipmentId) => set((state) => {
         if (state.selectedEquipmentIds.includes(equipmentId)) {
           return { selectedEquipmentIds: state.selectedEquipmentIds.filter((id) => id !== equipmentId) };
@@ -88,10 +108,12 @@ export const useSimulatorStore = create<SimulatorStore>()(
       setResult: (result) => set({ result }),
       runSimulation: () => {
         const state = get();
+        const equipped = equipment.filter((item) => state.selectedEquipmentIds.includes(item.id));
+        const abilityDamage = calculateMeleeAbilityDamage(state.playerLevels.strength + state.strengthBoost, equipped, equipmentStyleBonus(equipped, "melee") + state.meleeStyleBonus).total;
         set({ result: simulateRotation({
           rotation: state.rotation,
           abilities,
-          abilityDamage: state.abilityDamage,
+          abilityDamage,
           startingAdrenaline: state.startingAdrenaline,
         }) });
       },
@@ -100,9 +122,13 @@ export const useSimulatorStore = create<SimulatorStore>()(
       name: "rs3-combat-simulator",
       partialize: (state) => ({
         abilityDamage: state.abilityDamage,
+        strengthBoost: state.strengthBoost,
+        meleeStyleBonus: state.meleeStyleBonus,
         startingAdrenaline: state.startingAdrenaline,
         rotation: state.rotation,
         selectedEquipmentIds: state.selectedEquipmentIds,
+        characterName: state.characterName,
+        playerLevels: state.playerLevels,
       }),
     },
   ),

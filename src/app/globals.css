@@ -79,9 +79,9 @@ main { width: min(1180px, calc(100% - 40px)); margin: auto; }
 .hero-facts b { color: var(--ink); font-size: 13px; }
 
 .panel, .result-shell { background: linear-gradient(145deg, rgba(18,31,35,.94), rgba(9,18,21,.94)); border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(0,0,0,.22); }
-.config-panel { padding: 28px 30px; display: grid; grid-template-columns: .9fr 2fr; gap: 48px; align-items: center; }
+.config-panel { padding: 28px 30px; display: grid; grid-template-columns: .7fr 3fr; gap: 38px; align-items: center; }
 .section-heading h2 { font-family: var(--font-display); font-weight: 600; font-size: 21px; margin: 8px 0 0; letter-spacing: -.015em; }
-.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.field-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .field { display: flex; flex-direction: column; gap: 8px; color: #b8c1c4; font-size: 12px; font-weight: 600; }
 .field small { color: #64747a; font-size: 10px; font-weight: 400; }
 .input-shell { display: flex; align-items: center; height: 48px; background: #091316; border: 1px solid #29383c; padding: 0 14px; }
@@ -90,6 +90,23 @@ main { width: min(1180px, calc(100% - 40px)); margin: auto; }
 .input-shell .adrenaline-mark { color: #d36f5f; }
 .input-shell input { width: 100%; color: var(--ink); border: 0; background: transparent; outline: 0; font-size: 17px; font-weight: 700; }
 .input-shell em { font-style: normal; color: var(--muted); }
+.calculated-damage output { color: var(--gold-bright); font-size: 17px; font-weight: 800; }
+
+.levels-panel { margin-top: 18px; padding: 28px 30px; display: grid; grid-template-columns: 220px minmax(280px, .8fr) 1.4fr; gap: 26px; align-items: start; }
+.levels-heading p { color: var(--muted); font-size: 10px; line-height: 1.6; margin: 12px 0 0; }
+.character-lookup { display: flex; flex-direction: column; gap: 8px; }
+.character-lookup > label, .level-field span { color: #b8c1c4; font-size: 10px; font-weight: 600; }
+.character-lookup > div { display: flex; height: 42px; }
+.character-lookup input, .level-field input { min-width: 0; color: var(--ink); background: #091316; border: 1px solid #29383c; outline: 0; }
+.character-lookup input { width: 100%; padding: 0 12px; }
+.character-lookup input:focus, .level-field input:focus { border-color: var(--gold); }
+.character-lookup button { flex: 0 0 auto; border: 1px solid var(--gold); color: #17120b; background: var(--gold-bright); padding: 0 14px; font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; cursor: pointer; }
+.character-lookup button:disabled { opacity: .55; cursor: wait; }
+.lookup-message { min-height: 14px; font-size: 9px; line-height: 1.4; }
+.lookup-message.success { color: var(--green); }.lookup-message.error { color: var(--red); }
+.levels-grid { display: grid; grid-template-columns: repeat(3, minmax(72px, 1fr)); gap: 9px; }
+.level-field { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; padding: 7px 8px; border: 1px solid var(--line); background: rgba(7,15,18,.55); }
+.level-field input { width: 48px; height: 30px; padding: 0 5px; text-align: center; font-size: 12px; font-weight: 700; }
 
 .equipment-panel { margin-top: 18px; padding: 28px; }
 .equipment-intro { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 15px 0 0; max-width: 680px; }
@@ -247,6 +264,8 @@ footer span { font-family: var(--font-display); color: #7f8b8e; }
   .hero-facts { gap: 12px; flex-wrap: wrap; }
   .hero-facts span + span { padding-left: 12px; }
   .config-panel { grid-template-columns: 1fr; gap: 22px; padding: 23px; }
+  .levels-panel { grid-template-columns: 1fr; padding: 23px; }
+  .levels-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .equipment-panel { padding: 22px; }
   .equipment-toolbar { grid-template-columns: 1fr 1fr; }
   .equipment-toolbar .search-shell { grid-column: 1 / -1; }
@@ -265,6 +284,9 @@ footer span { font-family: var(--font-display); color: #7f8b8e; }
   .site-header { padding: 0 14px; }
   .version { display: none; }
   .field-grid, .metric-grid { grid-template-columns: 1fr; }
+  .levels-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .character-lookup > div { height: auto; flex-direction: column; gap: 7px; }
+  .character-lookup input, .character-lookup button { min-height: 42px; }
   .equipment-toolbar { grid-template-columns: 1fr; }
   .equipment-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .hero h1 { font-size: 44px; }

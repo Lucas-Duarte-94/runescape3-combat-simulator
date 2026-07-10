@@ -36,5 +36,15 @@ describe("post-March 2026 ability catalog", () => {
     expect(equipment.filter((item) => item.id.startsWith("vestments-havoc-"))).toHaveLength(4);
     expect(equipment.find((item) => item.id === "vestments-havoc-boots")?.slot).toBe("feet");
     expect(equipment.filter((item) => item.kind === "armour").every((item) => item.image.startsWith("/equipment/") && !item.externalImage)).toBe(true);
+    expect(equipment.filter((item) => item.kind === "armour").every((item) => (item.styleBonus ?? 0) > 0)).toBe(true);
+  });
+
+  it("stores the current offensive bonus totals for each armour set", () => {
+    const total = (prefix: string) => equipment.filter((item) => item.id.startsWith(prefix)).reduce((sum, item) => sum + (item.styleBonus ?? 0), 0);
+    expect(total("vestments-havoc-")).toBe(126);
+    expect(total("masterwork-melee-")).toBeCloseTo(112.3);
+    expect(total("elite-tectonic-")).toBeCloseTo(86.2);
+    expect(total("deathdealer-")).toBeCloseTo(112.3);
+    expect(total("first-necromancer-")).toBeCloseTo(118.5);
   });
 });

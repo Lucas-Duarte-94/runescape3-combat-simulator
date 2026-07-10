@@ -2,6 +2,7 @@
 
 import { AbilityList } from "./ability-list/AbilityList";
 import { PlayerConfiguration } from "./configuration/PlayerConfiguration";
+import { PlayerLevels } from "./configuration/PlayerLevels";
 import { RotationBuilder } from "./rotation-builder/RotationBuilder";
 import { SimulationControls } from "./simulation/SimulationControls";
 import { SimulationResults } from "./simulation/SimulationResults";
@@ -32,6 +33,7 @@ export function SimulatorApp() {
         </section>
 
         <PlayerConfiguration />
+        <PlayerLevels />
         <EquipmentPanel />
         <div className="builder-grid"><AbilityList /><RotationBuilder /></div>
         <SimulationControls />

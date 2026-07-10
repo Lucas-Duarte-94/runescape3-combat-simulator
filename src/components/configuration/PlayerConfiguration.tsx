@@ -1,12 +1,20 @@
 "use client";
 
-import { useSimulatorStore } from "@/stores/simulator-store";
+import { calculateMeleeAbilityDamage, equipmentStyleBonus } from "@/engine/ability-damage";
+import { equipment, useSimulatorStore } from "@/stores/simulator-store";
 
 export function PlayerConfiguration() {
-  const abilityDamage = useSimulatorStore((state) => state.abilityDamage);
   const startingAdrenaline = useSimulatorStore((state) => state.startingAdrenaline);
-  const setAbilityDamage = useSimulatorStore((state) => state.setAbilityDamage);
+  const strength = useSimulatorStore((state) => state.playerLevels.strength);
+  const strengthBoost = useSimulatorStore((state) => state.strengthBoost);
+  const meleeStyleBonus = useSimulatorStore((state) => state.meleeStyleBonus);
+  const selectedEquipmentIds = useSimulatorStore((state) => state.selectedEquipmentIds);
+  const setStrengthBoost = useSimulatorStore((state) => state.setStrengthBoost);
+  const setMeleeStyleBonus = useSimulatorStore((state) => state.setMeleeStyleBonus);
   const setStartingAdrenaline = useSimulatorStore((state) => state.setStartingAdrenaline);
+  const equipped = equipment.filter((item) => selectedEquipmentIds.includes(item.id));
+  const equippedBonus = equipmentStyleBonus(equipped, "melee");
+  const damage = calculateMeleeAbilityDamage(strength + strengthBoost, equipped, equippedBonus + meleeStyleBonus);
 
   return (
     <section className="panel config-panel" aria-labelledby="config-title">
@@ -16,9 +24,19 @@ export function PlayerConfiguration() {
       </div>
       <div className="field-grid">
         <label className="field">
-          <span>Ability damage</span>
-          <span className="input-shell"><b>⚔</b><input type="number" min={1} max={100000} value={abilityDamage} onChange={(e) => setAbilityDamage(Math.max(1, Number(e.target.value) || 1))} /></span>
-          <small>The base value shown in your offensive stats.</small>
+          <span>Calculated ability damage</span>
+          <span className="input-shell calculated-damage"><b>⚔</b><output>{damage.total.toLocaleString("en-US")}</output></span>
+          <small>{damage.setup.replace("_", " ")} · Level {damage.levelDamage} + weapon {damage.weaponDamage}</small>
+        </label>
+        <label className="field">
+          <span>Strength boost</span>
+          <span className="input-shell"><b>↑</b><input type="number" min={0} max={25} value={strengthBoost} onChange={(e) => setStrengthBoost(Number(e.target.value) || 0)} /></span>
+          <small>Temporary potion boost. Effective Strength: {Math.min(145, strength + strengthBoost)}.</small>
+        </label>
+        <label className="field">
+          <span>Additional melee bonus</span>
+          <span className="input-shell"><b>＋</b><input type="number" min={0} max={1000} step="0.1" value={meleeStyleBonus} onChange={(e) => setMeleeStyleBonus(Number(e.target.value) || 0)} /></span>
+          <small>Equipped armour: {equippedBonus.toFixed(1)} · Manual extras: {meleeStyleBonus.toFixed(1)}.</small>
         </label>
         <label className="field">
           <span>Starting adrenaline</span>

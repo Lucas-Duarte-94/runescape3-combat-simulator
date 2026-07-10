@@ -17,11 +17,10 @@ function EquipmentCard({ item }: { item: Equipment }) {
   const weaponStats = item.kind === "weapon" ? ` · Damage ${item.damage} · Accuracy ${item.accuracy}` : "";
   return <button className={`equipment-card ${selected ? "selected" : ""}`} onClick={() => toggleEquipment(item.id)} aria-pressed={selected} title={`${item.name}${item.tier ? ` · Tier ${item.tier}` : " · Best-in-slot"}${handedness}${weaponStats}`}>
     <span className="equipment-icon">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <Image src={image} alt={`${item.name} equipment icon`} width={48} height={48} onError={() => setImageStage((stage) => stage < 2 ? (stage + 1) as 1 | 2 : 2)} />
     </span>
     {item.handedness === "two_handed" && <span className="two-handed-badge">2H</span>}
-    <span className="equipment-tooltip" role="tooltip"><b>{item.name}</b><small>{item.tier ? `Tier ${item.tier}` : "Best-in-slot"} · {item.slot.replace("_", " ")}{handedness}</small>{item.kind === "weapon" && <small>Damage {item.damage} · Accuracy {item.accuracy}</small>}</span>
+    <span className="equipment-tooltip" role="tooltip"><b>{item.name}</b><small>{item.tier ? `Tier ${item.tier}` : "Best-in-slot"} · {item.slot.replace("_", " ")}{handedness}</small>{item.kind === "weapon" && <small>Damage {item.damage} · Accuracy {item.accuracy}</small>}{item.styleBonus !== undefined && <small>{item.style === "melee" ? "Strength" : item.style} bonus {item.styleBonus}</small>}</span>
     <span className="equipment-check">{selected ? "✓" : "+"}</span>
   </button>;
 }
@@ -31,7 +30,6 @@ function LoadoutItemImage({ item }: { item: Equipment }) {
   const fallback = item.style === "melee" ? "/abilities/melee-generic.svg" : item.style === "magic" || item.style === "necromancy" ? "/abilities/constitution-generic.svg" : "/abilities/defence-generic.svg";
   const image = imageStage === 0 ? item.image : fallback;
   return <span className="loadout-item-image">
-    {/* eslint-disable-next-line @next/next/no-img-element */}
     <Image src={image} alt={item.name} width={48} height={48} onError={() => setImageStage((stage) => stage < 2 ? (stage + 1) as 1 | 2 : 2)} />
   </span>;
 }

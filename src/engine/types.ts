@@ -5,6 +5,8 @@ export type EquipmentStyle = "melee" | "ranged" | "magic" | "necromancy" | "all"
 export type EquipmentSlot = "weapon" | "off_hand" | "armour" | "head" | "body" | "legs" | "hands" | "feet" | "cape" | "neck" | "ring";
 export type EquipmentHandedness = "main_hand" | "off_hand" | "two_handed";
 export type AbilityCategory = "basic" | "enhanced" | "threshold" | "ultimate" | "utility";
+export type CombatSkill = "attack" | "strength" | "defence" | "constitution" | "ranged" | "magic" | "prayer" | "necromancy" | "summoning";
+export type PlayerLevels = Record<CombatSkill, number>;
 
 export interface AbilityHit {
   tickOffset: number;
@@ -49,6 +51,8 @@ export interface Equipment {
   damage?: number;
   /** The weapon's listed accuracy. */
   accuracy?: number;
+  /** Offensive bonus for the equipment's combat style (Strength for Melee). */
+  styleBonus?: number;
   kind: "weapon" | "armour" | "accessory";
   description: string;
   image: string;
