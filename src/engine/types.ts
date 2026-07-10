@@ -45,9 +45,14 @@ export interface Equipment {
   slot: EquipmentSlot;
   handedness?: EquipmentHandedness;
   tier?: number;
+  /** The weapon's listed ability damage. */
+  damage?: number;
+  /** The weapon's listed accuracy. */
+  accuracy?: number;
   kind: "weapon" | "armour" | "accessory";
   description: string;
   image: string;
+  externalImage?: string;
   bestInSlot?: boolean;
   source?: { pageTitle: string; url?: string; checkedAt?: string };
 }

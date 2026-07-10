@@ -1,498 +1,808 @@
 [
-    {
-        "id":  "noxious-scythe",
-        "name":  "Noxious scythe",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Two-handed halberd-range weapon with strong area coverage.",
-        "image":  "/equipment/noxious-scythe.webp",
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+  {
+    "id": "noxious-scythe",
+    "name": "Noxious scythe",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Two-handed halberd-range weapon with strong area coverage.",
+    "image": "/equipment/noxious-scythe.png",
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "masterwork-spear-annihilation",
-        "name":  "Masterwork Spear of Annihilation",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 spear that extends bleed durations.",
-        "image":  "/equipment/masterwork-spear-annihilation.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1296,
+    "accuracy": 2458
+  },
+  {
+    "id": "masterwork-spear-annihilation",
+    "name": "Masterwork Spear of Annihilation",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 spear that extends bleed durations.",
+    "image": "/equipment/masterwork-spear-annihilation.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "zaros-godsword",
-        "name":  "Zaros godsword",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 two-handed sword with a powerful special attack.",
-        "image":  "/equipment/zaros-godsword.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1324.8,
+    "accuracy": 2577
+  },
+  {
+    "id": "zaros-godsword",
+    "name": "Zaros godsword",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 two-handed sword with a powerful special attack.",
+    "image": "/equipment/zaros-godsword.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "abyssal-scourge",
-        "name":  "Abyssal scourge",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 main-hand whip that builds Abyssal Parasite stacks.",
-        "image":  "/equipment/abyssal-scourge.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "handedness": "two_handed",
+    "damage": 1324.8,
+    "accuracy": 2577
+  },
+  {
+    "id": "abyssal-scourge",
+    "name": "Abyssal scourge",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 main-hand whip that builds Abyssal Parasite stacks.",
+    "image": "/equipment/abyssal-scourge.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "dark-shard-leng",
-        "name":  "Dark Shard of Leng",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 main-hand ice shard.",
-        "image":  "/equipment/dark-shard-leng.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 883.2,
+    "accuracy": 2577
+  },
+  {
+    "id": "dark-shard-leng",
+    "name": "Dark Shard of Leng",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 main-hand ice shard.",
+    "image": "/equipment/dark-shard-leng.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "dark-sliver-leng",
-        "name":  "Dark Sliver of Leng",
-        "style":  "melee",
-        "slot":  "off_hand",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 off-hand ice shard.",
-        "image":  "/equipment/dark-sliver-leng.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 912,
+    "accuracy": 2765
+  },
+  {
+    "id": "dark-sliver-leng",
+    "name": "Dark Sliver of Leng",
+    "style": "melee",
+    "slot": "off_hand",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 off-hand ice shard.",
+    "image": "/equipment/dark-sliver-leng.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "ek-zekkil",
-        "name":  "Ek-ZekKil",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 two-handed sword with a high-impact special attack.",
-        "image":  "/equipment/ek-zekkil.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "damage": 456,
+    "accuracy": 2765
+  },
+  {
+    "id": "ek-zekkil",
+    "name": "Ek-ZekKil",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 two-handed sword with a high-impact special attack.",
+    "image": "/equipment/ek-zekkil.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "tumekens-light",
-        "name":  "Tumeken\u0027s Light",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 two-handed melee weapon.",
-        "image":  "/equipment/tumekens-light.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1368,
+    "accuracy": 2765
+  },
+  {
+    "id": "tumekens-light",
+    "name": "Tumeken's Light",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 two-handed melee weapon.",
+    "image": "/equipment/tumekens-light.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "masterwork-2h-sword",
-        "name":  "Masterwork 2h sword",
-        "style":  "melee",
-        "slot":  "weapon",
-        "tier":  100,
-        "kind":  "weapon",
-        "description":  "Tier 100 masterwork two-handed sword.",
-        "image":  "/equipment/masterwork-2h-sword.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Melee_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1368,
+    "accuracy": 2765
+  },
+  {
+    "id": "masterwork-2h-sword",
+    "name": "Masterwork 2h sword",
+    "style": "melee",
+    "slot": "weapon",
+    "tier": 100,
+    "kind": "weapon",
+    "description": "Tier 100 masterwork two-handed sword.",
+    "image": "/equipment/masterwork-2h-sword.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Melee weapons",
+      "url": "https://runescape.wiki/w/Weapon/Melee_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "vestments-havoc",
-        "name":  "Vestments of Havoc",
-        "style":  "melee",
-        "slot":  "armour",
-        "tier":  95,
-        "kind":  "armour",
-        "description":  "Tier 95 power armour set for burst Melee damage.",
-        "image":  "/equipment/vestments-havoc.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Melee armour",
-                       "url":  "https://runescape.wiki/w/Armour/Melee_armour",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "handedness": "two_handed",
+    "damage": 1440,
+    "accuracy": 3100
+  },
+  {
+    "id": "noxious-longbow",
+    "name": "Noxious longbow",
+    "style": "ranged",
+    "slot": "weapon",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Tier 90 two-handed bow.",
+    "image": "/equipment/noxious-longbow.png",
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "masterwork-armour",
-        "name":  "Masterwork armour",
-        "style":  "melee",
-        "slot":  "armour",
-        "tier":  90,
-        "kind":  "armour",
-        "description":  "Tier 90 power armour with strong general-purpose defenses.",
-        "image":  "/equipment/masterwork-armour.webp",
-        "source":  {
-                       "pageTitle":  "Melee armour",
-                       "url":  "https://runescape.wiki/w/Armour/Melee_armour",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "handedness": "two_handed",
+    "damage": 1296,
+    "accuracy": 2458
+  },
+  {
+    "id": "seren-godbow",
+    "name": "Seren godbow",
+    "style": "ranged",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 two-handed bow.",
+    "image": "/equipment/seren-godbow.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "noxious-longbow",
-        "name":  "Noxious longbow",
-        "style":  "ranged",
-        "slot":  "weapon",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Tier 90 two-handed bow.",
-        "image":  "/equipment/noxious-longbow.webp",
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1324.8,
+    "accuracy": 2577
+  },
+  {
+    "id": "blightbound-crossbow",
+    "name": "Blightbound crossbow",
+    "style": "ranged",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 main-hand crossbow.",
+    "image": "/equipment/blightbound-crossbow.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "seren-godbow",
-        "name":  "Seren godbow",
-        "style":  "ranged",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 two-handed bow.",
-        "image":  "/equipment/seren-godbow.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "damage": 883.2,
+    "accuracy": 2577
+  },
+  {
+    "id": "off-hand-blightbound-crossbow",
+    "name": "Off-hand Blightbound crossbow",
+    "style": "ranged",
+    "slot": "off_hand",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 off-hand crossbow.",
+    "image": "/equipment/off-hand-blightbound-crossbow.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "blightbound-crossbow",
-        "name":  "Blightbound crossbow",
-        "style":  "ranged",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 main-hand crossbow.",
-        "image":  "/equipment/blightbound-crossbow.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 441.6,
+    "accuracy": 2577
+  },
+  {
+    "id": "bow-last-guardian",
+    "name": "Bow of the Last Guardian",
+    "style": "ranged",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 two-handed bow.",
+    "image": "/equipment/bow-last-guardian.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "off-hand-blightbound-crossbow",
-        "name":  "Off-hand Blightbound crossbow",
-        "style":  "ranged",
-        "slot":  "off_hand",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 off-hand crossbow.",
-        "image":  "/equipment/off-hand-blightbound-crossbow.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "handedness": "two_handed",
+    "damage": 1368,
+    "accuracy": 2765
+  },
+  {
+    "id": "masterwork-bow",
+    "name": "Masterwork bow",
+    "style": "ranged",
+    "slot": "weapon",
+    "tier": 100,
+    "kind": "weapon",
+    "description": "Tier 100 masterwork bow.",
+    "image": "/equipment/masterwork-bow.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Ranged weapons",
+      "url": "https://runescape.wiki/w/Weapon/Ranged_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "bow-last-guardian",
-        "name":  "Bow of the Last Guardian",
-        "style":  "ranged",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 two-handed bow.",
-        "image":  "/equipment/bow-last-guardian.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "handedness": "two_handed",
+    "damage": 1440,
+    "accuracy": 3100
+  },
+  {
+    "id": "seismic-wand",
+    "name": "Seismic wand",
+    "style": "magic",
+    "slot": "weapon",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Tier 90 main-hand Magic weapon.",
+    "image": "/equipment/seismic-wand.png",
+    "source": {
+      "pageTitle": "Magic weapons",
+      "url": "https://runescape.wiki/w/Weapon/Magic_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "masterwork-bow",
-        "name":  "Masterwork bow",
-        "style":  "ranged",
-        "slot":  "weapon",
-        "tier":  100,
-        "kind":  "weapon",
-        "description":  "Tier 100 masterwork bow.",
-        "image":  "/equipment/masterwork-bow.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Ranged weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Ranged_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "damage": 864,
+    "accuracy": 2458
+  },
+  {
+    "id": "seismic-singularity",
+    "name": "Seismic singularity",
+    "style": "magic",
+    "slot": "off_hand",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Tier 90 off-hand Magic weapon.",
+    "image": "/equipment/seismic-singularity.png",
+    "source": {
+      "pageTitle": "Magic weapons",
+      "url": "https://runescape.wiki/w/Weapon/Magic_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "elite-tectonic",
-        "name":  "Elite tectonic robe armour",
-        "style":  "magic",
-        "slot":  "armour",
-        "tier":  92,
-        "kind":  "armour",
-        "description":  "Tier 92 power armour for Magic.",
-        "image":  "/equipment/elite-tectonic.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Magic armour",
-                       "url":  "https://runescape.wiki/w/Armour/Magic_armour",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 432,
+    "accuracy": 2458
+  },
+  {
+    "id": "praesul-wand",
+    "name": "Wand of the praesul",
+    "style": "magic",
+    "slot": "weapon",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 main-hand Magic weapon.",
+    "image": "/equipment/praesul-wand.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Magic weapons",
+      "url": "https://runescape.wiki/w/Weapon/Magic_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "seismic-wand",
-        "name":  "Seismic wand",
-        "style":  "magic",
-        "slot":  "weapon",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Tier 90 main-hand Magic weapon.",
-        "image":  "/equipment/seismic-wand.webp",
-        "source":  {
-                       "pageTitle":  "Magic weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Magic_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 883.2,
+    "accuracy": 2577
+  },
+  {
+    "id": "imperium-core",
+    "name": "Imperium core",
+    "style": "magic",
+    "slot": "off_hand",
+    "tier": 92,
+    "kind": "weapon",
+    "description": "Tier 92 off-hand Magic weapon.",
+    "image": "/equipment/imperium-core.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Magic weapons",
+      "url": "https://runescape.wiki/w/Weapon/Magic_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "seismic-singularity",
-        "name":  "Seismic singularity",
-        "style":  "magic",
-        "slot":  "off_hand",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Tier 90 off-hand Magic weapon.",
-        "image":  "/equipment/seismic-singularity.webp",
-        "source":  {
-                       "pageTitle":  "Magic weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Magic_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 441.6,
+    "accuracy": 2577
+  },
+  {
+    "id": "fractured-staff-armadyl",
+    "name": "Fractured Staff of Armadyl",
+    "style": "magic",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 two-handed Magic weapon.",
+    "image": "/equipment/fractured-staff-armadyl.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Magic weapons",
+      "url": "https://runescape.wiki/w/Weapon/Magic_weapons",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "praesul-wand",
-        "name":  "Wand of the praesul",
-        "style":  "magic",
-        "slot":  "weapon",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 main-hand Magic weapon.",
-        "image":  "/equipment/praesul-wand.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Magic weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Magic_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "handedness": "two_handed",
+    "damage": 1368,
+    "accuracy": 2765
+  },
+  {
+    "id": "death-guard",
+    "name": "Death guard",
+    "style": "necromancy",
+    "slot": "weapon",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Tier 90 Necromancy main-hand weapon.",
+    "image": "/equipment/death-guard.png",
+    "source": {
+      "pageTitle": "Necromancy",
+      "url": "https://runescape.wiki/w/Necromancy",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "imperium-core",
-        "name":  "Imperium core",
-        "style":  "magic",
-        "slot":  "off_hand",
-        "tier":  92,
-        "kind":  "weapon",
-        "description":  "Tier 92 off-hand Magic weapon.",
-        "image":  "/equipment/imperium-core.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Magic weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Magic_weapons",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 864,
+    "accuracy": 2458
+  },
+  {
+    "id": "skull-lantern",
+    "name": "Skull lantern",
+    "style": "necromancy",
+    "slot": "off_hand",
+    "tier": 90,
+    "kind": "weapon",
+    "description": "Tier 90 Necromancy off-hand weapon.",
+    "image": "/equipment/skull-lantern.png",
+    "source": {
+      "pageTitle": "Necromancy",
+      "url": "https://runescape.wiki/w/Necromancy",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "fractured-staff-armadyl",
-        "name":  "Fractured Staff of Armadyl",
-        "style":  "magic",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 two-handed Magic weapon.",
-        "image":  "/equipment/fractured-staff-armadyl.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Magic weapons",
-                       "url":  "https://runescape.wiki/w/Weapon/Magic_weapons",
-                       "checkedAt":  "2026-07-10"
-                   },
-        "handedness":  "two_handed"
+    "damage": 432,
+    "accuracy": 2458
+  },
+  {
+    "id": "omniguard",
+    "name": "Omni guard",
+    "style": "necromancy",
+    "slot": "weapon",
+    "tier": 95,
+    "kind": "weapon",
+    "description": "Tier 95 Necromancy main-hand weapon.",
+    "image": "/equipment/omniguard.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Necromancy",
+      "url": "https://runescape.wiki/w/Necromancy",
+      "checkedAt": "2026-07-10"
     },
-    {
-        "id":  "death-guard",
-        "name":  "Death guard",
-        "style":  "necromancy",
-        "slot":  "weapon",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Tier 90 Necromancy main-hand weapon.",
-        "image":  "/equipment/death-guard.webp",
-        "source":  {
-                       "pageTitle":  "Necromancy",
-                       "url":  "https://runescape.wiki/w/Necromancy",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "skull-lantern",
-        "name":  "Skull lantern",
-        "style":  "necromancy",
-        "slot":  "off_hand",
-        "tier":  90,
-        "kind":  "weapon",
-        "description":  "Tier 90 Necromancy off-hand weapon.",
-        "image":  "/equipment/skull-lantern.webp",
-        "source":  {
-                       "pageTitle":  "Necromancy",
-                       "url":  "https://runescape.wiki/w/Necromancy",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "omniguard",
-        "name":  "Omni guard",
-        "style":  "necromancy",
-        "slot":  "weapon",
-        "tier":  95,
-        "kind":  "weapon",
-        "description":  "Tier 95 Necromancy main-hand weapon.",
-        "image":  "/equipment/omniguard.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Necromancy",
-                       "url":  "https://runescape.wiki/w/Necromancy",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "deathdealer-robes",
-        "name":  "Deathdealer robes",
-        "style":  "necromancy",
-        "slot":  "armour",
-        "tier":  90,
-        "kind":  "armour",
-        "description":  "Tier 90 Necromancy power armour.",
-        "image":  "/equipment/deathdealer-robes.webp",
-        "source":  {
-                       "pageTitle":  "Necromancy",
-                       "url":  "https://runescape.wiki/w/Necromancy",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "first-necromancer-robes",
-        "name":  "First Necromancer\u0027s robes",
-        "style":  "necromancy",
-        "slot":  "armour",
-        "tier":  95,
-        "kind":  "armour",
-        "description":  "Tier 95 Necromancy power armour.",
-        "image":  "/equipment/first-necromancer-robes.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Necromancy",
-                       "url":  "https://runescape.wiki/w/Necromancy",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "essence-of-finality",
-        "name":  "Essence of Finality",
-        "style":  "all",
-        "slot":  "neck",
-        "kind":  "accessory",
-        "description":  "Best-in-slot combat amulet that stores a weapon special attack.",
-        "image":  "/equipment/essence-of-finality.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Essence of Finality",
-                       "url":  "https://runescape.wiki/w/Essence_of_Finality",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "reavers-ring",
-        "name":  "Reaver\u0027s ring",
-        "style":  "all",
-        "slot":  "ring",
-        "kind":  "accessory",
-        "description":  "Best-in-slot offensive ring for critical hit chance.",
-        "image":  "/equipment/reavers-ring.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Reaver\u0027s ring",
-                       "url":  "https://runescape.wiki/w/Reaver%27s_ring",
-                       "checkedAt":  "2026-07-10"
-                   }
-    },
-    {
-        "id":  "champions-ring",
-        "name":  "Champion\u0027s ring",
-        "style":  "melee",
-        "slot":  "ring",
-        "kind":  "accessory",
-        "description":  "Melee ring with bleed and critical strike synergy.",
-        "image":  "/equipment/champions-ring.webp",
-        "bestInSlot":  true,
-        "source":  {
-                       "pageTitle":  "Champion\u0027s ring",
-                       "url":  "https://runescape.wiki/w/Champion%27s_ring",
-                       "checkedAt":  "2026-07-10"
-                   }
+    "damage": 912,
+    "accuracy": 2765
+  },
+  {
+    "id": "essence-of-finality",
+    "name": "Essence of Finality",
+    "style": "all",
+    "slot": "neck",
+    "kind": "accessory",
+    "description": "Best-in-slot combat amulet that stores a weapon special attack.",
+    "image": "/equipment/essence-of-finality.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Essence of Finality",
+      "url": "https://runescape.wiki/w/Essence_of_Finality",
+      "checkedAt": "2026-07-10"
     }
+  },
+  {
+    "id": "reavers-ring",
+    "name": "Reaver's ring",
+    "style": "all",
+    "slot": "ring",
+    "kind": "accessory",
+    "description": "Best-in-slot offensive ring for critical hit chance.",
+    "image": "/equipment/reavers-ring.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Reaver's ring",
+      "url": "https://runescape.wiki/w/Reaver%27s_ring",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "champions-ring",
+    "name": "Champion's ring",
+    "style": "melee",
+    "slot": "ring",
+    "kind": "accessory",
+    "description": "Melee ring with bleed and critical strike synergy.",
+    "image": "/equipment/champions-ring.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Champion's ring",
+      "url": "https://runescape.wiki/w/Champion%27s_ring",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "vestments-havoc-hood",
+    "name": "Vestments of havoc hood",
+    "style": "melee",
+    "slot": "head",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 melee power armour.",
+    "image": "/equipment/vestments-havoc-hood.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Vestments of havoc armour",
+      "url": "https://runescape.wiki/w/Vestments_of_havoc_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "vestments-havoc-robe-top",
+    "name": "Vestments of havoc robe top",
+    "style": "melee",
+    "slot": "body",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 melee power armour.",
+    "image": "/equipment/vestments-havoc-robe-top.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Vestments of havoc armour",
+      "url": "https://runescape.wiki/w/Vestments_of_havoc_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "vestments-havoc-robe-bottom",
+    "name": "Vestments of havoc robe bottom",
+    "style": "melee",
+    "slot": "legs",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 melee power armour.",
+    "image": "/equipment/vestments-havoc-robe-bottom.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Vestments of havoc armour",
+      "url": "https://runescape.wiki/w/Vestments_of_havoc_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "vestments-havoc-boots",
+    "name": "Vestments of havoc boots",
+    "style": "melee",
+    "slot": "feet",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 melee power armour.",
+    "image": "/equipment/vestments-havoc-boots.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Vestments of havoc armour",
+      "url": "https://runescape.wiki/w/Vestments_of_havoc_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "masterwork-melee-helm",
+    "name": "Masterwork melee helm",
+    "style": "melee",
+    "slot": "head",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 melee power armour.",
+    "image": "/equipment/masterwork-melee-helm.png",
+    "source": {
+      "pageTitle": "Masterwork melee equipment",
+      "url": "https://runescape.wiki/w/Masterwork_melee_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "masterwork-melee-platebody",
+    "name": "Masterwork melee platebody",
+    "style": "melee",
+    "slot": "body",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 melee power armour.",
+    "image": "/equipment/masterwork-melee-platebody.png",
+    "source": {
+      "pageTitle": "Masterwork melee equipment",
+      "url": "https://runescape.wiki/w/Masterwork_melee_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "masterwork-melee-platelegs",
+    "name": "Masterwork melee platelegs",
+    "style": "melee",
+    "slot": "legs",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 melee power armour.",
+    "image": "/equipment/masterwork-melee-platelegs.png",
+    "source": {
+      "pageTitle": "Masterwork melee equipment",
+      "url": "https://runescape.wiki/w/Masterwork_melee_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "masterwork-melee-gloves",
+    "name": "Masterwork melee gloves",
+    "style": "melee",
+    "slot": "hands",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 melee power armour.",
+    "image": "/equipment/masterwork-melee-gloves.png",
+    "source": {
+      "pageTitle": "Masterwork melee equipment",
+      "url": "https://runescape.wiki/w/Masterwork_melee_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "masterwork-melee-boots",
+    "name": "Masterwork melee boots",
+    "style": "melee",
+    "slot": "feet",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 melee power armour.",
+    "image": "/equipment/masterwork-melee-boots.png",
+    "source": {
+      "pageTitle": "Masterwork melee equipment",
+      "url": "https://runescape.wiki/w/Masterwork_melee_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "elite-tectonic-mask",
+    "name": "Elite tectonic mask",
+    "style": "magic",
+    "slot": "head",
+    "tier": 92,
+    "kind": "armour",
+    "description": "Tier 92 magic power armour.",
+    "image": "/equipment/elite-tectonic-mask.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Elite tectonic robe armour",
+      "url": "https://runescape.wiki/w/Elite_tectonic_robe_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "elite-tectonic-robe-top",
+    "name": "Elite tectonic robe top",
+    "style": "magic",
+    "slot": "body",
+    "tier": 92,
+    "kind": "armour",
+    "description": "Tier 92 magic power armour.",
+    "image": "/equipment/elite-tectonic-robe-top.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Elite tectonic robe armour",
+      "url": "https://runescape.wiki/w/Elite_tectonic_robe_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "elite-tectonic-robe-bottom",
+    "name": "Elite tectonic robe bottom",
+    "style": "magic",
+    "slot": "legs",
+    "tier": 92,
+    "kind": "armour",
+    "description": "Tier 92 magic power armour.",
+    "image": "/equipment/elite-tectonic-robe-bottom.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "Elite tectonic robe armour",
+      "url": "https://runescape.wiki/w/Elite_tectonic_robe_armour",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "deathdealer-hood-t90",
+    "name": "Deathdealer hood (tier 90)",
+    "style": "necromancy",
+    "slot": "head",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 necromancy power armour.",
+    "image": "/equipment/deathdealer-hood-t90.png",
+    "source": {
+      "pageTitle": "Deathdealer robes",
+      "url": "https://runescape.wiki/w/Deathdealer_robes",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "deathdealer-robe-top-t90",
+    "name": "Deathdealer robe top (tier 90)",
+    "style": "necromancy",
+    "slot": "body",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 necromancy power armour.",
+    "image": "/equipment/deathdealer-robe-top-t90.png",
+    "source": {
+      "pageTitle": "Deathdealer robes",
+      "url": "https://runescape.wiki/w/Deathdealer_robes",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "deathdealer-robe-bottom-t90",
+    "name": "Deathdealer robe bottom (tier 90)",
+    "style": "necromancy",
+    "slot": "legs",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 necromancy power armour.",
+    "image": "/equipment/deathdealer-robe-bottom-t90.png",
+    "source": {
+      "pageTitle": "Deathdealer robes",
+      "url": "https://runescape.wiki/w/Deathdealer_robes",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "deathdealer-gloves-t90",
+    "name": "Deathdealer gloves (tier 90)",
+    "style": "necromancy",
+    "slot": "hands",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 necromancy power armour.",
+    "image": "/equipment/deathdealer-gloves-t90.png",
+    "source": {
+      "pageTitle": "Deathdealer robes",
+      "url": "https://runescape.wiki/w/Deathdealer_robes",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "deathdealer-boots-t90",
+    "name": "Deathdealer boots (tier 90)",
+    "style": "necromancy",
+    "slot": "feet",
+    "tier": 90,
+    "kind": "armour",
+    "description": "Tier 90 necromancy power armour.",
+    "image": "/equipment/deathdealer-boots-t90.png",
+    "source": {
+      "pageTitle": "Deathdealer robes",
+      "url": "https://runescape.wiki/w/Deathdealer_robes",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "first-necromancer-crown",
+    "name": "Crown of the First Necromancer",
+    "style": "necromancy",
+    "slot": "head",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 necromancy power armour.",
+    "image": "/equipment/first-necromancer-crown.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "First Necromancer's equipment",
+      "url": "https://runescape.wiki/w/First_Necromancer's_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "first-necromancer-robe-top",
+    "name": "Robe top of the First Necromancer",
+    "style": "necromancy",
+    "slot": "body",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 necromancy power armour.",
+    "image": "/equipment/first-necromancer-robe-top.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "First Necromancer's equipment",
+      "url": "https://runescape.wiki/w/First_Necromancer's_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "first-necromancer-robe-bottom",
+    "name": "Robe bottom of the First Necromancer",
+    "style": "necromancy",
+    "slot": "legs",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 necromancy power armour.",
+    "image": "/equipment/first-necromancer-robe-bottom.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "First Necromancer's equipment",
+      "url": "https://runescape.wiki/w/First_Necromancer's_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "first-necromancer-hand-wrap",
+    "name": "Hand wrap of the First Necromancer",
+    "style": "necromancy",
+    "slot": "hands",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 necromancy power armour.",
+    "image": "/equipment/first-necromancer-hand-wrap.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "First Necromancer's equipment",
+      "url": "https://runescape.wiki/w/First_Necromancer's_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  },
+  {
+    "id": "first-necromancer-foot-wraps",
+    "name": "Foot wraps of the First Necromancer",
+    "style": "necromancy",
+    "slot": "feet",
+    "tier": 95,
+    "kind": "armour",
+    "description": "Tier 95 necromancy power armour.",
+    "image": "/equipment/first-necromancer-foot-wraps.png",
+    "bestInSlot": true,
+    "source": {
+      "pageTitle": "First Necromancer's equipment",
+      "url": "https://runescape.wiki/w/First_Necromancer's_equipment",
+      "checkedAt": "2026-07-10"
+    }
+  }
 ]
