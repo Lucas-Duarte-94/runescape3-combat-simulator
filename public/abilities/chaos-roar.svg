@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Chaos Roar</title>
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="25%" r="80%">
+      <stop offset="0" stop-color="#92573d"/>
+      <stop offset="1" stop-color="#251412"/>
+    </radialGradient>
+    <linearGradient id="sound" x1="0" x2="1">
+      <stop stop-color="#f6d587"/>
+      <stop offset="1" stop-color="#d86345"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="8" fill="url(#bg)"/>
+  <path d="M8 12h48v40H8z" fill="none" stroke="#c98b55" stroke-opacity=".35"/>
+  <path d="M14 37c7-1 12-5 17-12 2 8 1 15-5 21-2-5-6-8-12-9Z" fill="#d7d0bb"/>
+  <path d="M17 37c5-1 9-3 12-7-1 5-3 9-5 12-2-3-4-5-7-5Z" fill="#16100e"/>
+  <path d="M36 27c7 1 12 3 17 7M35 34c8 0 14 1 20 3M35 41c7-1 12-1 17 0" fill="none" stroke="url(#sound)" stroke-width="3" stroke-linecap="round"/>
+  <path d="m43 17 2 6 6-1-5 4 3 5-6-3-4 4 2-6-5-3 6 1Z" fill="#f0cc78"/>
+</svg>
